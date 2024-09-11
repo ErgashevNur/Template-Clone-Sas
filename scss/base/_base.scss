@@ -1,13 +1,6 @@
-@import "./normalize.css";
-@import "./fonts.css";
-@import "./variables.css";
-@import "./buttons.css";
-@import "./header.css";
-@import "./footer.css";
-
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,31 +11,39 @@ html {
   scroll-behavior: smooth;
   height: 100%;
 }
-
 a {
   display: inline-block;
   text-decoration: none;
 }
-
 ul,
 ol {
   list-style: none;
 }
-
+img {
+  display: flex;
+  object-fit: cover;
+}
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Barlow";
 }
-
 main {
   flex-grow: 1;
 }
-
 h1 {
   margin: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces";
+  font-weight: 900;
+}
 .container {
   width: 100%;
   max-width: 1280px;
